@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+  </head>   
+  <body>
+    <main class="main-content-block">
+      <section class="intro-block">
+        <h2 class="intro">    Learn to code by watching others      </h2>
+        <p class="intro-description">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. </p>
+      </section>
+      <section class="form-try-blocks">
+        <p class="try-block">  <span>  Try it free 7 days </span> then $20/mo. thereafter</p>
+        <form >
+          <label for="firstName">
+           <div class="input">
+              <input type="text" placeholder="First Name" name="firstName">
+              <img src="images/icon-error.svg" class="icon-error firstname" alt="icon error - warning">
+            </div>
+            <span class="error-text firstname">First name cannot be empty</span> 
+          </label>
+  
+          <label for="lastname">
+           <div class="input">
+              <input type="text" placeholder="Last Name" name="lastName">
+              <img src="images/icon-error.svg" class="icon-error lastname" alt="icon error - warning">
+            </div>
+            <span class="error-text lastname">Last name cannot be empty</span>
+          </label>
+          
+          <label for="email">
+              <div class="input">
+                <input type="email" placeholder="Email Address" class="email" name="email">
+                <img src="images/icon-error.svg" class="icon-error email" alt="icon error - warning">
+              </div>
+            <span class="error-text email">Looks like this is not an email</span>
+          </label>
+          
+          <label for="password">
+             <div class="input">
+              <input type="password" placeholder="Password" name="password">
+              <img src="images/icon-error.svg" class="icon-error password" alt="icon error - warning">
+            </div>
+            <span class="error-text password">Password cannot be empty</span>
+          </label>
+          
+          <label for="claim">
+            <div class="claim" id="claim">  Claim your free trial </div>
+          </label>
+          
+          <p class="term-services">By clicking the button, you are agreeing to our <span> Terms and Services</span></p>
+        </form>
+      </section>
+
+    </main>
+
+
+
+    
+
+<!--   
+
+    
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+     </footer> -->
+     <script src="app.js"></script>
+  </body>
+</html>
